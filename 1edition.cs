@@ -10,15 +10,15 @@ namespace Flags
     {
         public static long Solve(int numberOfStripes)
         {
-            long baseForOneStripe = 2;
-            long baseForTwoStripes = baseForOneStripe;
+            long firstPart = 2;
+            long baseForTwoStripes = firstPart;
             if (numberOfStripes == 1 || numberOfStripes == 2)
             {
-                return baseForOneStripe;
+                return firstPart;
             }
             var valueOfVarients = new List<long>();
-            valueOfVarients.Add(baseForOneStripe);
-            valueOfVarients.Add(baseForTwoStripes);
+            valueOfVarients.Add(firstPart);
+            valueOfVarients.Add(firstPart);
 
             for (var i = 0; i < numberOfStripes - 2; i++)
             {
